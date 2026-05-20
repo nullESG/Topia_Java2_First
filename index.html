@@ -142,7 +142,6 @@
     .choice-item.selected-wrong   { border-color: #e53935; background: #ffebee; }
     .choice-item.reveal-correct   { border-color: #43a047; background: #e8f5e9; }
     .choice-item.disabled { cursor: default; pointer-events: none; }
-    .choice-icon { font-size: 16px; flex-shrink: 0; margin-top: 1px; }
 
     .free-answer { margin-top: 10px; }
     .free-answer textarea {
@@ -211,31 +210,17 @@
 
     .result-badge { display: none; text-align: center; margin-top: 6px; }
     .badge-correct {
-      display: inline-block;
-      background: #43a047;
-      color: white;
-      border-radius: 20px;
-      padding: 3px 14px;
-      font-size: 12px;
-      font-weight: bold;
+      display: inline-block; background: #43a047; color: white;
+      border-radius: 20px; padding: 3px 14px; font-size: 12px; font-weight: bold;
     }
     .badge-wrong {
-      display: inline-block;
-      background: #e53935;
-      color: white;
-      border-radius: 20px;
-      padding: 3px 14px;
-      font-size: 12px;
-      font-weight: bold;
+      display: inline-block; background: #e53935; color: white;
+      border-radius: 20px; padding: 3px 14px; font-size: 12px; font-weight: bold;
     }
 
     .page-footer {
-      text-align: center;
-      color: #888;
-      font-size: 11px;
-      margin-top: 30px;
-      padding-top: 12px;
-      border-top: 1px solid #ddd;
+      text-align: center; color: #888; font-size: 11px;
+      margin-top: 30px; padding-top: 12px; border-top: 1px solid #ddd;
     }
   </style>
 </head>
@@ -276,7 +261,7 @@
     </div>
   </div>
 
-  <!-- 問02 -->
+  <!-- 問02 ★「業務」→「責務」に修正 -->
   <div class="q-card">
     <div class="q-header">
       <span class="q-num">問 02</span>
@@ -284,15 +269,15 @@
     </div>
     <div class="q-body">
       <ul class="choices" data-correct="ウ" data-qid="2">
-        <li class="choice-item" data-val="ア"><span class="choice-label">ア</span><span>実行手順に従ってコードを記述する方法が「オブジェクト指向」プログラミングで、プログラムを部品化した各オブジェクトに業務を持たせる方法が「手続き型」プログラミングである。</span></li>
+        <li class="choice-item" data-val="ア"><span class="choice-label">ア</span><span>実行手順に従ってコードを記述する方法が「オブジェクト指向」プログラミングで、プログラムを部品化した各オブジェクトに<strong>責務</strong>を持たせる方法が「手続き型」プログラミングである。</span></li>
         <li class="choice-item" data-val="イ"><span class="choice-label">イ</span><span>実行手順に従ってコードを記述する方法が「手続き型」プログラミングで、プログラムを部品化した各オブジェクトに実行手順を記述する方法が「オブジェクト指向」プログラミングである。</span></li>
-        <li class="choice-item" data-val="ウ"><span class="choice-label">ウ</span><span>実行手順に従ってコードを記述する方法が「手続き型」プログラミングで、プログラムを部品化した各オブジェクトに業務を持たせる方法が「オブジェクト指向」プログラミングである。</span></li>
+        <li class="choice-item" data-val="ウ"><span class="choice-label">ウ</span><span>実行手順に従ってコードを記述する方法が「手続き型」プログラミングで、プログラムを部品化した各オブジェクトに<strong>責務</strong>を持たせる方法が「オブジェクト指向」プログラミングである。</span></li>
       </ul>
       <div class="result-badge" id="badge2"></div>
       <div class="explanation" id="exp2">
         <div class="exp-title">💡 解説</div>
         <div class="correct-answer">✅ 正解：ウ</div>
-        「手続き型」は実行順序に沿ってコードを記述するスタイルです。「オブジェクト指向」は現実世界のものに対応したオブジェクトを部品化し、それぞれのオブジェクトに業務（責務）を持たせるスタイルです。イは「業務」ではなく「実行手順」としている点が誤りです。
+        「手続き型」は実行順序に沿ってコードを記述するスタイルです。「オブジェクト指向」は現実世界のものに対応したオブジェクトを部品化し、それぞれのオブジェクトに責務を持たせるスタイルです。イは「責務」ではなく「実行手順」としている点が誤りです。
       </div>
     </div>
   </div>
@@ -313,7 +298,7 @@
       <div class="explanation" id="exp3">
         <div class="exp-title">💡 解説</div>
         <div class="correct-answer">✅ 正解：イ</div>
-        オブジェクトの構成要素は「属性（フィールド）」と「操作（メソッド）」の2つです。属性は情報（データ）を保持する責任を持ち、操作は行動（処理）の責任を持ちます。「集約」「汎化」はオブジェクト間の関係を表すUMLの概念であり、構成要素ではありません。
+        オブジェクトの構成要素は「属性（フィールド）」と「操作（メソッド）」の2つです。属性は情報（データ）を保持する責任を持ち、操作は行動（処理）の責任を持ちます。「集約」「汎化」はオブジェクト間の関係を表すUMLの概念であり、オブジェクト自体の構成要素ではありません。
       </div>
     </div>
   </div>
@@ -326,7 +311,7 @@
     </div>
     <div class="q-body">
       <ul class="choices" data-correct="ウ" data-qid="4">
-        <li class="choice-item" data-val="ア"><span class="choice-label">ア</span><span>オブジェクトから他のオブジェクトの操作を呼び出して相互に作用してプログラムとして動く。他のオブジェクトの情報はカプセル化により守られているので、相互に作用することはない。</span></li>
+        <li class="choice-item" data-val="ア"><span class="choice-label">ア</span><span>オブジェクトから他のオブジェクトの操作を呼び出して相互に作用してプログラムとして動く。他のオブジェクトの情報はカプセル化により守られているので、相互作用することはない。</span></li>
         <li class="choice-item" data-val="イ"><span class="choice-label">イ</span><span>オブジェクトは完全に独立しているため、オブジェクト同士の相互作用を必要とせず単独で動く。</span></li>
         <li class="choice-item" data-val="ウ"><span class="choice-label">ウ</span><span>オブジェクトから他のオブジェクトの操作の呼び出し、他のオブジェクトの情報の取得や変更を行うことによってオブジェクトは相互に作用し、全体で1つのプログラムとして動く。</span></li>
       </ul>
@@ -334,7 +319,7 @@
       <div class="explanation" id="exp4">
         <div class="exp-title">💡 解説</div>
         <div class="correct-answer">✅ 正解：ウ</div>
-        オブジェクト指向では、複数のオブジェクトがメッセージ（メソッド呼び出し）を通じて相互作用し、全体として1つのプログラムとして機能します。カプセル化は情報を外部から守る仕組みですが、getter/setter などを通じて情報の取得・変更は行えます。オブジェクトは独立して動くわけではありません。
+        オブジェクト指向では、複数のオブジェクトがメッセージ（メソッド呼び出し）を通じて相互作用し、全体として1つのプログラムとして機能します。カプセル化は情報を外部から守る仕組みですが、getter/setter などを通じて情報の取得・変更は行えます。
       </div>
     </div>
   </div>
@@ -343,17 +328,16 @@
   <div class="q-card">
     <div class="q-header">
       <span class="q-num">問 05</span>
-      <div class="q-text">オブジェクト指向言語の３大機能を記述しなさい（完答）。</div>
+      <div class="q-text">オブジェクト指向言語の3大機能を記述しなさい（完答）。</div>
     </div>
     <div class="q-body">
       <div class="free-answer">
         <textarea placeholder="ここに回答を入力してください…" rows="2"></textarea>
-        <button class="show-answer-btn" onclick="showFreeAnswer('exp5', '5')">答えを確認する</button>
+        <button class="show-answer-btn" onclick="showFreeAnswer('exp5','5')">答えを確認する</button>
       </div>
       <div class="explanation" id="exp5">
         <div class="exp-title">💡 解説</div>
         <div class="correct-answer">✅ 正解：カプセル化・継承・ポリモーフィズム（多態性）</div>
-        オブジェクト指向の3大機能は以下の3つです。<br>
         ①<strong>カプセル化</strong>：データとメソッドをひとまとめにし、外部からの不正アクセスを防ぐ。<br>
         ②<strong>継承</strong>：既存クラスの機能を引き継いで新しいクラスを作る。<br>
         ③<strong>ポリモーフィズム（多態性）</strong>：同じメソッド呼び出しで異なる動作を実現する。
@@ -383,7 +367,7 @@
 }</div>
       <div class="free-answer">
         <textarea placeholder="①に当てはまるコードを入力…" rows="1"></textarea>
-        <button class="show-answer-btn" onclick="showFreeAnswer('exp6', '6')">答えを確認する</button>
+        <button class="show-answer-btn" onclick="showFreeAnswer('exp6','6')">答えを確認する</button>
       </div>
       <div class="explanation" id="exp6">
         <div class="exp-title">💡 解説</div>
@@ -393,7 +377,7 @@
     </div>
   </div>
 
-  <!-- 問07 -->
+  <!-- 問07 ★オ・カの括弧なしに修正 -->
   <div class="q-card">
     <div class="q-header">
       <span class="q-num">問 07</span>
@@ -405,8 +389,8 @@
         <li class="choice-item" data-val="イ"><span class="choice-label">イ</span><span>Hero hero = new Hero("とびあ", 100) ；</span></li>
         <li class="choice-item" data-val="ウ"><span class="choice-label">ウ</span><span>hero hero = new Hero("とびあ", "100") ；</span></li>
         <li class="choice-item" data-val="エ"><span class="choice-label">エ</span><span>Hero hero = new Hero("とびあ", "100") ；</span></li>
-        <li class="choice-item" data-val="オ"><span class="choice-label">オ</span><span>hero hero = new Hero() ；</span></li>
-        <li class="choice-item" data-val="カ"><span class="choice-label">カ</span><span>Hero hero = new Hero() ；</span></li>
+        <li class="choice-item" data-val="オ"><span class="choice-label">オ</span><span>hero hero = new Hero ；</span></li>
+        <li class="choice-item" data-val="カ"><span class="choice-label">カ</span><span>Hero hero = new Hero ；</span></li>
       </ul>
       <div class="result-badge" id="badge7"></div>
       <div class="explanation" id="exp7">
@@ -414,7 +398,7 @@
         <div class="correct-answer">✅ 正解：イ</div>
         ①型名（クラス名）は大文字始まりの <code>Hero</code> を使います（小文字の <code>hero</code> は誤り）。<br>
         ②コンストラクタの引数は <code>(String name, int hp)</code> なので、第2引数は <code>int</code> 型の <code>100</code>（数値）を渡します（文字列 <code>"100"</code> は型不一致でコンパイルエラー）。<br>
-        ③引数なしのコンストラクタは定義されていないので、<code>new Hero()</code> はエラーになります。
+        ③引数なしのコンストラクタは定義されていないので、 <code>new Hero</code> もエラーになります。
       </div>
     </div>
   </div>
@@ -433,9 +417,7 @@
     </div>
     <div class="q-body">
       <div class="code-block">public class HealthRecord {
-    String <span class="inline-box">①</span> ;
-    double height ;
-    double <span class="inline-box">②</span> ;
+    String <span class="inline-box">①</span> ;    double height ;    double <span class="inline-box">②</span> ;
     public <span class="inline-box">③</span> (String name, double <span class="inline-box">④</span> , double weight) {
         <span class="inline-box">⑤</span> .name = name ;
         <span class="inline-box">⑤</span> .height = height ;
@@ -444,7 +426,7 @@
 }</div>
       <div class="free-answer">
         <textarea placeholder="①〜⑤の答えをそれぞれ入力…" rows="3"></textarea>
-        <button class="show-answer-btn" onclick="showFreeAnswer('exp8', '8')">答えを確認する</button>
+        <button class="show-answer-btn" onclick="showFreeAnswer('exp8','8')">答えを確認する</button>
       </div>
       <div class="explanation" id="exp8">
         <div class="exp-title">💡 解説</div>
@@ -497,12 +479,12 @@
 }</div>
       <div class="free-answer">
         <textarea placeholder="①に当てはまるコードを入力…" rows="1"></textarea>
-        <button class="show-answer-btn" onclick="showFreeAnswer('exp10', '10')">答えを確認する</button>
+        <button class="show-answer-btn" onclick="showFreeAnswer('exp10','10')">答えを確認する</button>
       </div>
       <div class="explanation" id="exp10">
         <div class="exp-title">💡 解説</div>
         <div class="correct-answer">✅ 正解：this(1)</div>
-        「最適な記述」という条件がポイントです。<code>this.val = 1</code> でも動作しますが、既に <code>Dice(int val)</code> というコンストラクタが存在するため、<code>this(1)</code> でそのコンストラクタを呼び出すのが最適（コンストラクタチェーン）です。同じ処理を重複して書かず、再利用することがベストプラクティスです。
+        「最適な記述」という条件がポイントです。<code>this.val = 1</code> でも動作しますが、既に <code>Dice(int val)</code> というコンストラクタが存在するため、<code>this(1)</code> でそのコンストラクタを呼び出すのが最適（コンストラクタチェーン）です。
       </div>
     </div>
   </div>
@@ -530,7 +512,7 @@
       <div class="explanation" id="exp11">
         <div class="exp-title">💡 解説</div>
         <div class="correct-answer">✅ 正解：エ</div>
-        カプセル化とは、公開するメンバー（<code>public</code>）と非公開にするメンバー（<code>private</code>）を分けて制限し、<strong>公開されているメンバーのみ</strong>外部からアクセスできるようにする仕組みです。通常、フィールドは <code>private</code>、アクセスメソッド（getter/setter）は <code>public</code> にします。
+        カプセル化とは、公開するメンバー（<code>public</code>）と非公開にするメンバー（<code>private</code>）を分けて制限し、<strong>公開されているメンバーのみ</strong>外部からアクセスできるようにする仕組みです。
       </div>
     </div>
   </div>
@@ -579,16 +561,15 @@
 }</div>
       <div class="free-answer">
         <textarea placeholder="①〜⑤の答えをそれぞれ入力…" rows="3"></textarea>
-        <button class="show-answer-btn" onclick="showFreeAnswer('exp13', '13')">答えを確認する</button>
+        <button class="show-answer-btn" onclick="showFreeAnswer('exp13','13')">答えを確認する</button>
       </div>
       <div class="explanation" id="exp13">
         <div class="exp-title">💡 解説</div>
         <div class="correct-answer">✅ 正解：①private　②String　③getName　④setName　⑤this.name</div>
-        カプセル化の定石は「フィールドを <code>private</code> にし、getter/setter を <code>public</code> で提供する」ことです。<br>
         ① <code>private</code>：フィールドを外部から隠す。<br>
         ② <code>String</code>：getter の戻り値の型。<br>
-        ③ <code>getName</code>：getter のメソッド名（慣例：get + フィールド名）。<br>
-        ④ <code>setName</code>：setter のメソッド名（慣例：set + フィールド名）。<br>
+        ③ <code>getName</code>：getter のメソッド名。<br>
+        ④ <code>setName</code>：setter のメソッド名。<br>
         ⑤ <code>this.name</code>：フィールド name に引数 name を代入する。
       </div>
     </div>
@@ -612,14 +593,14 @@
 }</div>
       <div class="free-answer">
         <textarea placeholder="指摘箇所と修正内容を入力…" rows="3"></textarea>
-        <button class="show-answer-btn" onclick="showFreeAnswer('exp14', '14')">答えを確認する</button>
+        <button class="show-answer-btn" onclick="showFreeAnswer('exp14','14')">答えを確認する</button>
       </div>
       <div class="explanation" id="exp14">
         <div class="exp-title">💡 解説</div>
         <div class="correct-answer">✅ 正解：boolean型のgetterはisXxx()という名前にする</div>
         <strong>指摘箇所：</strong><code>getHantei()</code> メソッド名<br>
         <strong>修正内容：</strong><code>isHantei()</code> に変更する。<br><br>
-        Java の慣例（JavaBeans 仕様）では、<code>boolean</code> 型のフィールドの getter は <code>get</code> ではなく <code>is</code> を先頭につけます（例：<code>isHantei()</code>）。動作はしますが、推奨される命名規則に従っていないため指摘対象となります。
+        Java の慣例（JavaBeans 仕様）では、<code>boolean</code> 型のフィールドの getter は <code>get</code> ではなく <code>is</code> を先頭につけます。
       </div>
     </div>
   </div>
@@ -656,14 +637,14 @@
       </div>
       <div class="free-answer">
         <textarea placeholder="指摘箇所と修正内容を入力…" rows="3"></textarea>
-        <button class="show-answer-btn" onclick="showFreeAnswer('exp15', '15')">答えを確認する</button>
+        <button class="show-answer-btn" onclick="showFreeAnswer('exp15','15')">答えを確認する</button>
       </div>
       <div class="explanation" id="exp15">
         <div class="exp-title">💡 解説</div>
         <div class="correct-answer">✅ 正解：h1.nameへの直接アクセスがエラー → h1.setName()を使う</div>
         <strong>指摘箇所：</strong>Main クラスの <code>h1.name = "とびあ太郎" ;</code><br>
         <strong>修正内容：</strong><code>h1.setName("とびあ太郎") ;</code> に変更する。<br><br>
-        Hero クラスの <code>name</code> フィールドは <code>private</code> のため、外部クラス（Main）から直接アクセスすることはできません。setter メソッド <code>setName()</code> を通じてアクセスするのが正しい方法です。
+        Hero クラスの <code>name</code> フィールドは <code>private</code> のため、外部クラスから直接アクセスできません。
       </div>
     </div>
   </div>
@@ -682,8 +663,8 @@
     <div class="q-body">
       <ul class="choices" data-correct="ウ" data-qid="16">
         <li class="choice-item" data-val="ア"><span class="choice-label">ア</span><span>単一継承と多重継承の2つがある。</span></li>
-        <li class="choice-item" data-val="イ"><span class="choice-label">イ</span><span>多重継承のみで、単一継承は認めていない。</span></li>
-        <li class="choice-item" data-val="ウ"><span class="choice-label">ウ</span><span>単一継承のみで、多重継承は認めていない。</span></li>
+        <li class="choice-item" data-val="イ"><span class="choice-label">イ</span><span>多重継承のみで単一継承は認めていない。</span></li>
+        <li class="choice-item" data-val="ウ"><span class="choice-label">ウ</span><span>単一継承のみで多重継承は認めていない。</span></li>
         <li class="choice-item" data-val="エ"><span class="choice-label">エ</span><span>多重継承を行っても良いが、単一継承が推奨されている。</span></li>
         <li class="choice-item" data-val="オ"><span class="choice-label">オ</span><span>単一継承を行っても良いが、多重継承が推奨されている。</span></li>
       </ul>
@@ -691,12 +672,12 @@
       <div class="explanation" id="exp16">
         <div class="exp-title">💡 解説</div>
         <div class="correct-answer">✅ 正解：ウ</div>
-        Javaは「単一継承」のみサポートしています。つまり、1つのクラスが継承できる親クラスはただ1つ（<code>extends</code> は1クラスのみ）です。C++ のような多重継承（複数の親クラスを同時に継承）はできません。ただし、インターフェースは複数実装（<code>implements</code>）できます。
+        Javaは「単一継承」のみサポートしています。1つのクラスが継承できる親クラスはただ1つ（<code>extends</code> は1クラスのみ）です。C++ のような多重継承はできません。ただし、インターフェースは複数実装（<code>implements</code>）できます。
       </div>
     </div>
   </div>
 
-  <!-- 問17 -->
+  <!-- 問17 複数選択 -->
   <div class="q-card">
     <div class="q-header">
       <span class="q-num">問 17</span>
@@ -714,11 +695,11 @@
       <div class="explanation" id="exp17">
         <div class="exp-title">💡 解説</div>
         <div class="correct-answer">✅ 正解（不適切な記述）：ア・エ</div>
-        ア：不適切。<code>final</code> メソッドはオーバーライドできませんが、<strong>オーバーロードは可能</strong>です（引数の異なる同名メソッドの追加は制限されません）。<br>
+        ア：不適切。<code>final</code> メソッドはオーバーライドできませんが、<strong>オーバーロードは可能</strong>です。<br>
         イ：正しい。<code>final</code> メソッドはオーバーライドできません。<br>
         ウ：正しい。<code>final</code> クラスは継承できません。<br>
-        エ：不適切。<code>final</code> クラスはそもそも<strong>継承自体ができません</strong>。継承できるが…という前提が誤りです。<br>
-        オ：正しい。<code>final</code> 変数は一度代入したら再代入できません（定数として扱われます）。
+        エ：不適切。<code>final</code> クラスはそもそも<strong>継承自体ができません</strong>。<br>
+        オ：正しい。<code>final</code> 変数は再代入できません（定数扱い）。
       </div>
     </div>
   </div>
@@ -744,7 +725,7 @@
       </div>
       <div class="free-answer">
         <textarea placeholder="①に当てはまるコードを入力…" rows="1"></textarea>
-        <button class="show-answer-btn" onclick="showFreeAnswer('exp18', '18')">答えを確認する</button>
+        <button class="show-answer-btn" onclick="showFreeAnswer('exp18','18')">答えを確認する</button>
       </div>
       <div class="explanation" id="exp18">
         <div class="exp-title">💡 解説</div>
@@ -801,7 +782,7 @@ public class Child extends Parent {
       <div class="explanation" id="exp19">
         <div class="exp-title">💡 解説</div>
         <div class="correct-answer">✅ 正解：イ（コンパイルエラー）</div>
-        Child クラスのコンストラクタ内で <code>super()</code> が呼び出されていません。Java では子クラスのコンストラクタは、必ず最初に親クラスのコンストラクタを呼び出す必要があります。親クラス <code>Parent</code> には引数なしのデフォルトコンストラクタが存在しないため、<code>super(age, name);</code> を明示的に呼ばなければコンパイルエラーになります。
+        Child クラスのコンストラクタ内で <code>super()</code> が呼び出されていません。Java では子クラスのコンストラクタは必ず最初に親クラスのコンストラクタを呼び出す必要があります。親クラス <code>Parent</code> には引数なしのデフォルトコンストラクタが存在しないため、<code>super(age, name);</code> を明示的に呼ばなければコンパイルエラーになります。
       </div>
     </div>
   </div>
@@ -830,11 +811,11 @@ public class Child extends Parent {
       <div class="explanation" id="exp20">
         <div class="exp-title">💡 解説</div>
         <div class="correct-answer">✅ 正解：オ</div>
-        オーバーライドの条件：①メソッド名が同じ、②引数の型・数が同じ、③戻り値の型が同じ、④アクセス修飾子を弱めない（制限を強くしない）。<br>
-        ア：引数なし → 引数が違う（オーバーロードになる）。<br>
+        オーバーライドの条件：①メソッド名が同じ、②引数の型・数が同じ、③戻り値の型が同じ、④アクセス修飾子を弱めない。<br>
+        ア：引数なし → オーバーロードになる。<br>
         イ：引数の型が違う（Monster → int）。<br>
         ウ：戻り値の型が違う（int → void）。<br>
-        エ：<code>public</code> を <code>protected</code> に変更するとアクセス制限が強まる → NG。<br>
+        エ：<code>public</code> → <code>protected</code> でアクセス制限が強まる → NG。<br>
         オ：すべての条件を満たす → 正しいオーバーライド。
       </div>
     </div>
@@ -863,7 +844,7 @@ public class Child extends Parent {
       <div class="explanation" id="exp21">
         <div class="exp-title">💡 解説</div>
         <div class="correct-answer">✅ 正解（不適切な記述）：エ</div>
-        エが不適切です。抽象クラスは抽象メソッド<strong>だけでなく</strong>、通常のメソッド（具体的な実装を持つメソッド）も持つことができます。抽象クラスの特徴は「<code>abstract</code> キーワードが必要」「インスタンス化不可」「フィールド・通常メソッド・抽象メソッドを混在できる」「型としての変数宣言は可能」です。
+        エが不適切です。抽象クラスは抽象メソッド<strong>だけでなく</strong>、通常のメソッド（具体的な実装を持つメソッド）も持つことができます。フィールド・通常メソッド・抽象メソッドを混在できます。
       </div>
     </div>
   </div>
@@ -888,10 +869,9 @@ public class Child extends Parent {
         <div class="correct-answer">✅ 正解：イ</div>
         アクセス修飾子の範囲（広い順）：<br>
         <code>public</code>：すべてのクラス。<br>
-        <code>protected</code>：同じパッケージ + 継承した子クラス。<br>
+        <code>protected</code>：同じパッケージ ＋ 継承した子クラス。<br>
         なし（デフォルト）：同じパッケージのみ。<br>
-        <code>private</code>：自分自身のクラスのみ。<br>
-        ウは誤り。<code>protected</code> はトップレベルクラスには使用できません（メンバーへのみ）。
+        <code>private</code>：自分自身のクラスのみ。
       </div>
     </div>
   </div>
@@ -914,12 +894,12 @@ public class Child extends Parent {
       <div class="explanation" id="exp23">
         <div class="exp-title">💡 解説</div>
         <div class="correct-answer">✅ 正解：ウ</div>
-        抽象クラスを継承した場合、通常はすべての抽象メソッドをオーバーライドしなければなりません。ただし、子クラス自身も <code>abstract</code> クラスとして宣言すれば、抽象メソッドのオーバーライドを孫クラス以降に委ねることができます。<code>final</code> クラスはそもそも継承できないため、抽象クラスとの組み合わせは不可です。
+        抽象クラスを継承した場合、通常はすべての抽象メソッドをオーバーライドしなければなりません。ただし、子クラス自身も <code>abstract</code> クラスとして宣言すれば、抽象メソッドのオーバーライドを孫クラス以降に委ねることができます。
       </div>
     </div>
   </div>
 
-  <!-- 問24 -->
+  <!-- 問24 ★選択肢エ・オの括弧なしに修正 -->
   <div class="q-card">
     <div class="q-header">
       <span class="q-num">問 24</span>
@@ -935,8 +915,8 @@ public class Child extends Parent {
         <li class="choice-item" data-val="ア"><span class="choice-label">ア</span><span>public void run() ;</span></li>
         <li class="choice-item" data-val="イ"><span class="choice-label">イ</span><span>protected void run() ;</span></li>
         <li class="choice-item" data-val="ウ"><span class="choice-label">ウ</span><span>public abstract void run() { System.out.println("勇者は逃げ出した。") ; }</span></li>
-        <li class="choice-item" data-val="エ"><span class="choice-label">エ</span><span>public abstract void run() ;</span></li>
-        <li class="choice-item" data-val="オ"><span class="choice-label">オ</span><span>public void abstract run() ;</span></li>
+        <li class="choice-item" data-val="エ"><span class="choice-label">エ</span><span>public abstract void run ;</span></li>
+        <li class="choice-item" data-val="オ"><span class="choice-label">オ</span><span>public void abstract run ;</span></li>
       </ul>
       <div class="result-badge" id="badge24"></div>
       <div class="explanation" id="exp24">
@@ -946,8 +926,8 @@ public class Child extends Parent {
         ア：<code>abstract</code> がない。<br>
         イ：アクセス修飾子が変わり、<code>abstract</code> もない。<br>
         ウ：<code>abstract</code> メソッドにメソッド本体は書けない（コンパイルエラー）。<br>
-        オ：<code>abstract</code> の位置が誤り（戻り値型の前に書く）。<br>
-        エ：正しい抽象メソッドの宣言。
+        エ：正しい抽象メソッドの宣言。<br>
+        オ：<code>abstract</code> の位置が誤り（戻り値型の前に書く）。
       </div>
     </div>
   </div>
@@ -1009,7 +989,7 @@ public class Hero extends Character {
         <div class="correct-answer">✅ 正解：イ</div>
         ア：抽象メソッドを含むクラスは必ず <code>abstract</code> クラスにしなければなりません。<code>class Character</code> に <code>abstract</code> がないためコンパイルエラー。<br>
         イ：<code>abstract class Character</code> に <code>abstract void run()</code> を宣言し、Hero クラスが正しくオーバーライドしている → 正解。<br>
-        ウ：<code>public void run() ;</code> は通常メソッドにセミコロンのみで本体なしのため、<code>abstract</code> キーワードがなくコンパイルエラー。
+        ウ：<code>public void run() ;</code> は <code>abstract</code> キーワードがなく本体もないためコンパイルエラー。
       </div>
     </div>
   </div>
@@ -1019,7 +999,7 @@ public class Hero extends Character {
     2306-01 ／ Javaプログラミング概論②・実習②（オブジェクト指向）
   </div>
 
-</div><!-- /container -->
+</div>
 
 <script>
   let answered = new Set();
@@ -1044,9 +1024,7 @@ public class Hero extends Character {
 
       ul.querySelectorAll('.choice-item').forEach(function(ci) {
         ci.classList.add('disabled');
-        if (ci.dataset.val === correct) {
-          ci.classList.add('reveal-correct');
-        }
+        if (ci.dataset.val === correct) ci.classList.add('reveal-correct');
       });
 
       if (selected === correct) {
@@ -1077,6 +1055,7 @@ public class Hero extends Character {
   // 複数選択（問17）
   document.querySelectorAll('.choices[data-multi]').forEach(function(ul) {
     let selected17 = new Set();
+
     ul.addEventListener('click', function(e) {
       const item = e.target.closest('.choice-item');
       if (!item || ul.classList.contains('locked')) return;
@@ -1092,7 +1071,6 @@ public class Hero extends Character {
         item.style.background = '#e3f2fd';
       }
 
-      // 確定ボタンを動的生成（なければ）
       if (!ul.nextElementSibling || !ul.nextElementSibling.classList.contains('multi-confirm')) {
         const btn = document.createElement('button');
         btn.className = 'show-answer-btn multi-confirm';
@@ -1109,12 +1087,8 @@ public class Hero extends Character {
             ci.classList.add('disabled');
             ci.style.borderColor = '';
             ci.style.background = '';
-            if (correctSet.has(ci.dataset.val)) {
-              ci.classList.add('reveal-correct');
-            }
-            if (selected17.has(ci.dataset.val) && !correctSet.has(ci.dataset.val)) {
-              ci.classList.add('selected-wrong');
-            }
+            if (correctSet.has(ci.dataset.val)) ci.classList.add('reveal-correct');
+            if (selected17.has(ci.dataset.val) && !correctSet.has(ci.dataset.val)) ci.classList.add('selected-wrong');
           });
 
           const badge = document.getElementById('badge' + qid);
